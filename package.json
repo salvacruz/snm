@@ -1,0 +1,28 @@
+{
+   "name": "snm",
+   "version": "1.0.0",
+   "description": "Sleep No More Discord Bot",
+   "main": "index.js",
+   "scripts": {
+      "build": "rm -rf build/ && tsc",
+      "start": "ts-node src/index.ts",
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "typeorm": "typeorm-ts-node-commonjs"
+   },
+   "author": "S. Salva Cruz",
+   "license": "ISC",
+   "dependencies": {
+      "body-parser": "^1.19.1",
+      "dotenv": "^16.3.1",
+      "express": "^4.17.2",
+      "joi": "^17.9.2",
+      "pg": "^8.11.2",
+      "reflect-metadata": "^0.1.13",
+      "typeorm": "0.3.17"
+   },
+   "devDependencies": {
+      "@types/node": "^16.11.10",
+      "ts-node": "10.7.0",
+      "typescript": "4.5.2"
+   }
+}
