@@ -51,4 +51,4 @@ AppDataSource.initialize()
         //console.log(chalk.blue(`[${new Date().toLocaleString()}] [INFO]`));
         Logging.info(`Express server has started on port ${config.server.port}.\nOpen http://localhost:${config.server.port}/users to see results`);
     })
-    .catch((error) => console.log(error));
+    .catch((error) => Logging.error(error));
