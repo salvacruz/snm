@@ -9,10 +9,10 @@ export default class Logging {
     }
 
     public static warn(args: any): void {
-        console.log(chalk.yellow(`[${new Date().toLocaleString()}] [INFO]`), typeof args === 'string' ? chalk.yellowBright(args) : args);
+        console.log(chalk.yellow(`[${new Date().toLocaleString()}] [WARN]`), typeof args === 'string' ? chalk.yellowBright(args) : args);
     }
 
     public static error(args: any): void {
-        console.log(chalk.bgRed(`[${new Date().toLocaleString()}] [INFO]`), typeof args === 'string' ? chalk.whiteBright(args) : args);
+        console.log(chalk.bgRed(`[${new Date().toLocaleString()}] [ERROR]`), typeof args === 'string' ? chalk.whiteBright(args) : args);
     }
 }
